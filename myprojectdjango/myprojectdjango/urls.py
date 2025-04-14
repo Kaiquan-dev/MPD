@@ -17,8 +17,13 @@ Including another URLconf
 from django.urls import path
 from app1.views import index
 from app1.views import postuser
+from app1.views import index_data
+from app1.views import my_index
   
 urlpatterns = [
-    path("", index),
+    path("forma/", index),
     path("postuser/", postuser),
+    path('data/', index_data),
+    path('', my_index),
+
 ]
