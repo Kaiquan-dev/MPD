@@ -12,7 +12,7 @@ def postuser(request):
     return HttpResponse(f"<h2>Name: {name}  Age: {age}</h2>")
 
 
-def index_data(requset):
+def index_data(request):
     x = {"kochis": "gay", "id": 1}
 
     return JsonResponse(x)
