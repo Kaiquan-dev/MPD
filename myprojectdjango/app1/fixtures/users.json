@@ -1,0 +1,51 @@
+[    
+    {        
+        "model": "app1.Users",        
+        "pk": 1,        
+        "fields": {            
+            "name": "Alice",            
+            "surname": "Johnson",            
+            "birthdate": "1990-01-01"        
+            }    
+    },    
+    
+    {        
+        "model": "app1.Users",        
+        "pk": 2,        
+        "fields": {            
+            "name": "Bob",            
+            "surname": "Smith",            
+            "birthdate": "1985-02-15"       
+            }    
+    },    
+    
+    {        
+        "model": "app1.Users",        
+        "pk": 3,        
+        "fields": {            
+            "name": "Charlie",            
+            "surname": "Brown",            
+            "birthdate": "1992-03-30"        
+            }    
+    },    
+    
+    {        
+        "model": "app1.Users",        
+        "pk": 4,        
+        "fields": {            
+            "name": "Diana",            
+            "surname": "Prince",            
+            "birthdate": "1980-04-20"        
+            }    
+    },    
+    
+    {        
+        "model": "app1.Users",        
+        "pk": 5,        
+        "fields": {            
+            "name": "Evan",            
+            "surname": "Green",            
+            "birthdate": "1988-05-10"       
+            }    
+    }
+]
