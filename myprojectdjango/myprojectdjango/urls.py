@@ -16,16 +16,21 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from app1.views import index
+from app1.views import forma
 from app1.views import postuser
 from app1.views import index_data
 from app1.views import my_index
+from app1.views import index_users
+from app1.views import index_books
   
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("forma/", index),
+    path("forma/", forma),
     path("postuser/", postuser),
     path('data/', index_data),
     path('', my_index),
+    path('users/', index_users),
+    path('books/', index_books),
+
 
 ]
