@@ -22,15 +22,17 @@ from app1.views import index_data
 from app1.views import my_index
 from app1.views import index_users
 from app1.views import index_books
+from app1.views import index_page
   
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("forma/", forma),
-    path("postuser/", postuser),
+    path("forma/postuser/", postuser),
     path('data/', index_data),
     path('', my_index),
     path('users/', index_users),
     path('books/', index_books),
+    path('page/', index_page),
 
 
 ]

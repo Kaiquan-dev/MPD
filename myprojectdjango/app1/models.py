@@ -1,7 +1,7 @@
 from django.db import models
 
 
-class Users(models.Model):
+class User(models.Model):
     name = models.CharField(max_length=100, blank=False)
     surname = models.CharField(max_length=100, blank=False)
     birthdate = models.DateField(default=0)

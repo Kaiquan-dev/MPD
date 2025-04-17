@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.http import JsonResponse
-from app1.models import Users
+from app1.models import User
 from app1.models import Book
 
  
@@ -25,10 +25,15 @@ def my_index(request):
 
 
 def index_users(request):
-    all_users = Users.objects.all()
+    all_users = User.objects.all()
     return render(request, 'users.html', locals())
 
 
 def index_books(request):
     all_books = Book.objects.all()
     return render(request, 'books.html', locals())
+
+
+def index_page(request):
+    one_page = User.objects.get(id=1)
+    return render(request, 'page.html', locals())

@@ -1,6 +1,6 @@
 [    
     {        
-        "model": "app1.Users",        
+        "model": "app1.User",        
         "pk": 1,        
         "fields": {            
             "name": "Alice",            
@@ -10,7 +10,7 @@
     },    
     
     {        
-        "model": "app1.Users",        
+        "model": "app1.User",        
         "pk": 2,        
         "fields": {            
             "name": "Bob",            
@@ -20,7 +20,7 @@
     },    
     
     {        
-        "model": "app1.Users",        
+        "model": "app1.User",        
         "pk": 3,        
         "fields": {            
             "name": "Charlie",            
@@ -30,7 +30,7 @@
     },    
     
     {        
-        "model": "app1.Users",        
+        "model": "app1.User",        
         "pk": 4,        
         "fields": {            
             "name": "Diana",            
@@ -40,7 +40,7 @@
     },    
     
     {        
-        "model": "app1.Users",        
+        "model": "app1.User",        
         "pk": 5,        
         "fields": {            
             "name": "Evan",            
