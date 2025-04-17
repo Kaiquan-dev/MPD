@@ -11,10 +11,10 @@
             <table>
                 {% for i in all_users %}
                 <tr>
-                    <td>{{ i.id }}</td>
-                    <td>{{ i.name }}</td>
-                    <td>{{ i.surname }}</td>
-                    <td>{{ i.birthday }}</td>
+                    <td> {{ i.id }} </td>
+                    <td> <a href="{{ i.id }}"> {{ i.name }} </a></td>
+                    <td> {{ i.surname }} </td>
+                    <td> {{ i.birthday }} </td>
                 </tr>
                 {% endfor %}
             </table>

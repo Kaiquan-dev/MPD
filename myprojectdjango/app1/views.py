@@ -3,6 +3,7 @@ from django.http import HttpResponse
 from django.http import JsonResponse
 from app1.models import User
 from app1.models import Book
+from datetime import date
 
  
 def forma(request):
@@ -34,6 +35,9 @@ def index_books(request):
     return render(request, 'books.html', locals())
 
 
-def index_page(request):
-    one_page = User.objects.get(id=1)
-    return render(request, 'page.html', locals())
+def current_user(request, id):
+    current_user = User.objects.get(id=id)
+    
+
+    age = (date.today() - current_user.birthdate).days // 365
+    return render(request, 'current_user.html', locals())
